@@ -6,5 +6,4 @@ CREATE TABLE IF NOT EXISTS geocode(
   longitude FLOAT
 );
 
-
 SELECT * FROM geocode;
