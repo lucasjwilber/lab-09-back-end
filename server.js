@@ -9,6 +9,8 @@ const cors = require('cors');
 app.use(cors());
 const client = require('./modules/client.js');
 
+const client = new pg.Client(process.env.DATABASE_URL);
+
 //imports:
 // const handleLocation = require('./modules/location.js');
 
