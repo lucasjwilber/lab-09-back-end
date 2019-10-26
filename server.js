@@ -7,7 +7,9 @@ require('dotenv').config();
 const superagent = require('superagent');
 const cors = require('cors');
 app.use(cors());
-const client = require('./modules/client.js');
+
+const pg = require('pg');
+const client = new pg.Client(process.env.DATABASE_URL);
 
 //imports:
 // const handleLocation = require('./modules/location.js');
