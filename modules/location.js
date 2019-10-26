@@ -1,8 +1,8 @@
 'use strict';
 
 const superagent = require('superagent');
-const client = require('./modules/client.js');
-
+const client = require('../modules/client.js');
+require('dotenv').config();
 
 
 function handleLocation(request, response) {
